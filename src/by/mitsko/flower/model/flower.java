@@ -1,18 +1,18 @@
 package by.mitsko.flower.model;
 
 public class flower {
-         public String title; // задание полей создаваемого объекта (шаблон)
+         public String title; 
          public String color;
          public petal[] petal;
          
-         public flower(){   //конструктор без параметров
+         public flower(){  
        
          }
-         public flower(String title, String color){  // конструктор с параметрами
-        	 this.color = color;    // переменные экземпл€ра класса. из локальной переменной извлечь значение и присвоить их переменной экземпл€ра
+         public flower(String title, String color){ 
+        	 this.color = color;    
         	 this.title = title;
          }
-          public void bloom(int petalCount){     // измен€ет состо€ние объекта
+          public void bloom(int petalCount){    
         	  if (petalCount > 0) {
         		  petal = new petal[petalCount];
         		  for (int i = 0; i<5; i++){
